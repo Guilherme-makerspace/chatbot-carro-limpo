@@ -11,10 +11,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import CarWashChat from '@/components/CarWashChat'
+
 export default function Home() {
-  return (
-    <div>
-     
-    </div>
-  );
+  return <CarWashChat />
 }
