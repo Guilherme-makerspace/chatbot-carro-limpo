@@ -1,0 +1,42 @@
+.divider {
+  height: 0.5px;
+  background: rgba(255, 255, 255, 0.06);
+  max-width: 100%;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat {
+  padding: 28px 40px;
+  border-right: 0.5px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat:last-child { border-right: none; }
+
+.statNum {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: #00b4ff;
+}
+
+.statLabel {
+  font-size: 13px;
+  color: rgba(232, 237, 245, 0.45);
+}
+
+.footer {
+  text-align: center;
+  padding: 32px;
+  font-size: 13px;
+  color: rgba(232, 237, 245, 0.3);
+  border-top: 0.5px solid rgba(255, 255, 255, 0.06);
+}

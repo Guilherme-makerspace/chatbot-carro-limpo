@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=DM+Sans:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --azul: #00b4ff;
+  --azul-hover: #33c3ff;
+  --bg: #080c14;
+  --bg2: #111827;
+  --bg3: #1a2234;
+  --texto: #e8edf5;
+  --texto-muted: rgba(232, 237, 245, 0.55);
+  --borda: rgba(255, 255, 255, 0.07);
+  --borda-azul: rgba(0, 180, 255, 0.3);
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--texto);
+  font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; font-family: 'DM Sans', sans-serif; }

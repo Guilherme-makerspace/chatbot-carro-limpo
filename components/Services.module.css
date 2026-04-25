@@ -1,0 +1,103 @@
+.section {
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header { margin-bottom: 40px; }
+
+.header h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.header p {
+  font-size: 15px;
+  color: rgba(232, 237, 245, 0.5);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 0.5px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 28px;
+  transition: border-color 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card:hover {
+  border-color: rgba(0, 180, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+.popular {
+  border-color: rgba(0, 180, 255, 0.35);
+}
+
+.icon { font-size: 28px; }
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tag {
+  background: rgba(0, 180, 255, 0.12);
+  color: #00b4ff;
+  font-size: 11px;
+  border-radius: 4px;
+  padding: 2px 8px;
+  border: 0.5px solid rgba(0, 180, 255, 0.25);
+  font-weight: 400;
+}
+
+.desc {
+  font-size: 14px;
+  color: rgba(232, 237, 245, 0.5);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.price {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #00b4ff;
+}
+
+.agendarBtn {
+  background: transparent;
+  border: 0.5px solid rgba(0, 180, 255, 0.4);
+  color: #00b4ff;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.agendarBtn:hover {
+  background: #00b4ff;
+  color: #080c14;
+}
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+  .section { padding: 48px 20px; }
+}
